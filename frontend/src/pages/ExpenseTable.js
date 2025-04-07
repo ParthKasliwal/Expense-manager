@@ -1,13 +1,13 @@
 import React from 'react';
 
-const ExpenseTable = ({ expenses, deleteExpens }) => {
+const ExpenseTable = ({ expenses, deleteExpense }) => {
 
     return (
-        <div className="expense-list">
+        <div className="expense-table">
             {expenses.map((expense, index) => (
                 <div key={index} className="expense-item">
                     <button className="delete-button" onClick={() =>
-                        deleteExpens(expense._id)}>X</button>
+                        deleteExpense(expense._id)}>X</button>
                     <div className="expense-description">{expense.text}</div>
                     <div
                         className="expense-amount"
