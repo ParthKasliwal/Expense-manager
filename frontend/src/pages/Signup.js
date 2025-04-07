@@ -54,7 +54,7 @@ function Signup() {
         }
     }
     return (
-        <div className='container'>
+        <div className='container1'>
             <h1>Signup</h1>
             <form onSubmit={handleSignup}>
                 <div>
